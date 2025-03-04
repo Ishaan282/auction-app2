@@ -6,3 +6,5 @@ dotenv.config();
 
 // Test the database connection
 connection();
+
+//! to run this file :- bun run test-db.js
