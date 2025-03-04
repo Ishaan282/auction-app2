@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "module": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run app.js",
+    "dev": "nodemon --exec bun run app.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "dotenv": "^16.4.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongodb": "^6.14.1",
+    "mongoose": "^8.12.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "zod": "^3.24.2"
+  }
+}
