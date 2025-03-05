@@ -1,14 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import SideDrawer from './layout/SideDrawer'
+
 import './App.css'
 
 function App() {
   return (
-    <div className="bg-blue-500 text-white p-4">
-      <h1 className="text-2xl font-bold">Hello, Tailwind CSS v3!</h1>
-      <p className="mt-2">This is a Bun + Vite + Tailwind CSS project.</p>
-    </div>
+    <Router>
+      <SideDrawer />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </Router>
   );
 }
 
