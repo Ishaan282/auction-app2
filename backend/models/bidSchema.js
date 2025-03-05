@@ -7,12 +7,12 @@ const bidSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
             required: true,
-        },
+        }, //taking id reference from user schema
         userName: String,
         profileImage: String,
     },
     auctionItem: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId, 
         ref: "Auction",
         required: true,
     },
