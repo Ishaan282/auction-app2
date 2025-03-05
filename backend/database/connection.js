@@ -4,6 +4,6 @@ export const connection = () => {
     mongoose.connect(process.env.MONGO_URI,{
         dbName: "auction-platform"
     }) 
-    .then(() => console.log('connected to DB'))
+    .then(() => console.log('connected to DB yepee'))
     .catch(error => console.log(`something went wrong :- ${error}`));
 }
